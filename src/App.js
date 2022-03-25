@@ -5,7 +5,7 @@ import Fruits from "./components/Fruits/Fruits";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header></Header>
       <Fruits></Fruits>
       <Footer></Footer>
