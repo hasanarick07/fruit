@@ -8,14 +8,19 @@ const Fruits = () => {
       .then(res => res.json())
       .then(data => setFruits(data));
   }, []);
+  const addToCart = id => {
+    console.log("hi", id);
+  };
   return (
     <div>
       <div>
         {Fruits.map(fruit => (
-          <Fruit key={fruit.id} fruit={fruit}></Fruit>
+          <Fruit key={fruit.id} fruit={fruit} added={addToCart}></Fruit>
         ))}
       </div>
-      <div></div>
+      <div>
+        <h1>Chooses Fruit</h1>
+      </div>
     </div>
   );
 };

@@ -1,14 +1,16 @@
 import React from "react";
 import "./Fruit.css";
 
-const Fruit = props => {
-  const { picture, name, price } = props.fruit;
+const Fruit = ({ fruit, added }) => {
+  const { picture, name, price, id } = fruit;
   return (
     <div className="card">
       <img src={picture} alt="" />
       <p>Name :{name}</p>
       <p>Price :{price} </p>
-      <div className="add-to-cart">Add To Cart</div>
+      <div onClick={() => added(id)} className="add-to-cart">
+        Add To Cart
+      </div>
     </div>
   );
 };
