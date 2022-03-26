@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Fruit from "../Fruit/Fruit";
+import "./Fruits.css";
 
 const Fruits = () => {
   const [Fruits, setFruits] = useState([]);
@@ -12,8 +13,8 @@ const Fruits = () => {
     console.log("hi", id);
   };
   return (
-    <div>
-      <div>
+    <div className="container">
+      <div className="fruit-container">
         {Fruits.map(fruit => (
           <Fruit key={fruit.id} fruit={fruit} added={addToCart}></Fruit>
         ))}

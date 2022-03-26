@@ -1,15 +1,17 @@
 .card {
-  border: 3px solid powderblue;
   border-radius: 7px;
   height: 300px;
   width: 250px;
-  margin: 5px;
+  margin: 8px;
   position: relative;
+  margin-left: 20px;
+  box-shadow: 1px 1px 3px 5px gainsboro;
 }
 .card img {
   width: 240px;
   height: 200px;
   margin: 5px;
+  border-radius: 7px;
 }
 .card p {
   margin-top: 3px;
@@ -24,6 +26,7 @@
   border-radius: 0 0 5px 5px;
   font-size: large;
   font-weight: 500;
+  box-shadow: 1px 1px 3px 5px gainsboro;
 }
 .add-to-cart:hover {
   background-color: rgba(51, 139, 51, 0.829);

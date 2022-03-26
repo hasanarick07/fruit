@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+.fruit-container {
+  display: grid;
+  grid-template-columns: repeat(3, 0.1fr);
+  gap: 10px;
+}
+@media screen and (max-width: 480px) {
+  .fruit-container {
+    grid-template-columns: repeat(1, 0.1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .fruit-container {
+    grid-template-columns: repeat(2, 0.1fr);
+  }
+}
