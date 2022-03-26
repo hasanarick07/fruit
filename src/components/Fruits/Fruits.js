@@ -34,6 +34,9 @@ const Fruits = () => {
     const chose = select[Math.floor(Math.random() * select.length)];
     alert(chose.name);
   };
+  const reload = () => {
+    window.location.reload(false);
+  };
   return (
     <div className="container">
       <div className="fruit-container">
@@ -50,7 +53,7 @@ const Fruits = () => {
           Choose One <FontAwesomeIcon icon={fa1}></FontAwesomeIcon>
         </button>
         <br />
-        <button>
+        <button onClick={reload}>
           Remove All <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon>
         </button>
       </div>
